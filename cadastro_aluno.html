@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Portfólio Pessoal - João Pedro Toaldo</h1>
-    </header>
-    <nav>
-        <p href="cadastro_aluno.html">Acessar Portal do Aluno</p>
-        <p href="cadastro_professor.html">Acessar Portal do Professor</p>
-
-        <ul>
-            <li>Sobre mim</li>
-            <li>Principais Habilidades</li>
-            <li>Minhas redes sociais</li>
-        </ul>
-    </nav>
+    <div class="container">
+        <h1>Formulário de Contato</h1>
+        <form action="/submit-form" method="post">
+        <label for="nome">Nome:</label> <!-- Rótulo para o campo "Nome" -->
+        <input type="text" id="nome" name="nome" required> <!-- Campo de entrada para o nome -->
+        <label for="email">E-mail:</label> <!-- Rótulo para o campo "E-mail" -->
+        <input type="email" id="email" name="email" required> <!-- Campo de entrada para o e-mail -->
+        <label for="senha">Senha:</label> <!-- Rótulo para o campo "Senha" -->
+        <input type="password" id="senha" name="senha" required> <!-- Campo de entrada para a senha -->
+        <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+        </form>
+        </div>
 </body>
 </html>

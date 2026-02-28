@@ -1,8 +1,30 @@
-/*body {
-    font-family: Arial, sans-serif; /* Define a fonte */
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Alinha o conteúdo ao centro */
-    background-color: #d32626; /* Cor de fundo */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px); /* Efeito de vidro */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: sticky;
+    top: 0;
+}
 
-}*/
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a, nav li {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+nav a:hover, nav li:hover {
+    color: #007bff;
+}
+
