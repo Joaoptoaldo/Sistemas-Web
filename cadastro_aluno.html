@@ -1,23 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro de Aluno - Portfólio</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Formulário de Contato</h1>
-        <form action="/submit-form" method="post">
-        <label for="nome">Nome:</label> <!-- Rótulo para o campo "Nome" -->
-        <input type="text" id="nome" name="nome" required> <!-- Campo de entrada para o nome -->
-        <label for="email">E-mail:</label> <!-- Rótulo para o campo "E-mail" -->
-        <input type="email" id="email" name="email" required> <!-- Campo de entrada para o e-mail -->
-        <label for="senha">Senha:</label> <!-- Rótulo para o campo "Senha" -->
-        <input type="password" id="senha" name="senha" required> <!-- Campo de entrada para a senha -->
-        <input type="submit" value="Enviar"> <!-- Botão de envio do formulário -->
+    <header>
+        <nav>
+            <div class="logo">MeuPortfólio</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastro_aluno.html">Alunos</a></li>
+                <li><a href="cadastro_professor.html" class="active">Professores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Nome completo, Matrícula, Curso, Semestre de ingresso, E-mail e Telefone-->
+    <main class="container">
+        <h2>Cadastro de Aluno</h2>
+        <form class="form">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+            </div>
+
+            <div class="form-group">
+                <label for="matricula">Matrícula:</label>
+                <input type="text" id="matricula" name="matricula" required placeholder="00000000">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="curso">Curso:</label>
+                    <input type="text" id="curso" name="curso" required placeholder="Sistemas de Informação">
+                </div>
+                <div class="form-group">
+                    <label for="semestre">Semestre de Ingresso:</label>
+                    <input type="text" id="semestre" name="semestre" required placeholder="2026.1">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail Institucional:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required placeholder="(55) 99999-9999">
+            </div>
+
+            <button type="submit" class="btn-enviar">Cadastrar Aluno</button>
         </form>
-        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Desenvolvido por João Pedro Toaldo.<br>2026 - UFN - Sistemas de Informação</p>
+    </footer>
 </body>
 </html>
