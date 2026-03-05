@@ -85,6 +85,16 @@ footer {
     color: #666;
 }
 
+footer p {
+    margin: 0;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.copy:hover{
+    color: #007bf7;
+}
+
 /* INDEX.HTML */
 .container-home {
     max-width: 1050px;
