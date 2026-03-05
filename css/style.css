@@ -38,19 +38,18 @@ input:focus {
 }
 
 /* CABEÇALHO E NAVEGAÇÃO */
-
 header {
     background-color: #2c3e50;
     padding: 1rem 0;/* espaçamento vertical */
 }
 
 nav {
-    max-width: 1000px; 
+    max-width: 1000px;
     margin: 0 auto; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    display: flex;/* para alinhar logo e menu na mesma linha */
+    justify-content: space-between; /* espaço entre logo e menu */
+    align-items: center; 
+    padding: 0 20px; 
 }
 
 nav .logo {
@@ -73,7 +72,7 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li a.active {
+nav ul li a.ativo {
     color: #fff;
 }
 
@@ -141,21 +140,21 @@ footer {
 
 .botao-github, .botao-linkedin, .botao-insta {
     text-decoration: none; 
-    color: #2c3e50;
-    padding: 10px 20px;
+    color: #2c3e50; 
+    padding: 10px 20px; /* espaçamento interno */
     border: 2px solid #2c3e50;
     border-radius: 5px;
-    transition: 0.3s;
-    font-weight: bold;
-}
-
-.botao-github:hover {
-    background-color: #333;
-    color: #fff;
+    transition: 0.3s; /* transição para hover */
+    font-weight: bold; /* em negrito */
 }
 
 .botao-linkedin:hover {
     background-color: #0077b5;
+    color: #fff;
+}
+
+.botao-github:hover {
+    background-color: #333;
     color: #fff;
 }
 
@@ -207,19 +206,16 @@ footer {
     border-radius: 10px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
-
 /* campos do formulário */
-.form-group {
-    margin-bottom: 15px;
+.form-grupo {
+    margin-bottom: 15px;/* espaçamento entre os grupos de campos */
 }
-
-.form-row {
-    display: flex;
-    gap: 15px;
+.form-linha {
+    display: flex;/* para colocar os campos lado a lado */
+    gap: 15px;/* espaçamento entre os campos na mesma linha */
 }
-
-.form-row .form-group {
-    flex: 1;
+.form-linha .form-grupo {
+    flex: 1;/* cada grupo ocupa o mesmo espaço */
 }
 
 /* botão de envio */
@@ -244,8 +240,7 @@ footer {
 
 /* RESPONSIVIDADE */
 @media (max-width: 768px) {
-    /* ajusta a seção de perfil para empilhar */
-    .perfil {
+    .perfil { /* ajusta a seção de perfil para empilhar */
         flex-direction: column;
         text-align: center;
         padding: 20px;
@@ -256,8 +251,7 @@ footer {
         height: 200px;
     }
 
-    /* faz o menu de navegação também empilhar */
-    nav {
+    nav {/* faz o menu de navegação também empilhar */
         flex-direction: column;
         gap: 15px;
     }
